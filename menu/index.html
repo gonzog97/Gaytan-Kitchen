@@ -40,48 +40,183 @@
       </div>
     </section>
 
-    <!-- TODO: menu items and prices are sourced from a photographed Instagram weekly menu
-         and scattered captions/reviews (research brief, Aug 2026) — confirm current pricing
-         and item availability with the owner before publishing. -->
+    <!-- TODO: menu items and prices below are transcribed directly from photos of the
+         in-restaurant printed menu (provided by the client, Aug 2026) — this supersedes
+         the earlier Instagram/review-sourced list. Bakery items are listed without prices
+         since the printed dessert page doesn't post them; confirm current pricing with the
+         owner if you want it shown. Sandwiches were removed from this page at the client's
+         request. -->
     <section class="section">
       <div class="container">
-        <div class="grid">
+        <div class="menu-accordions">
 
-          <div class="card">
-            <div class="card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg>
-            </div>
-            <h3>Breakfast</h3>
-            <p class="price-tag">$8 – $18</p>
-            <p>Served all day. Chilaquiles, biscuits and gravy, breakfast burritos, pancakes, French toast, breakfast buns stuffed with bacon or chorizo, and chicken fried steak with eggs and hashbrowns.</p>
-          </div>
+          <details class="menu-accordion" open>
+            <summary>
+              <div class="card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg>
+              </div>
+              <span class="accordion-heading">
+                <h3>Breakfast</h3>
+                <span class="price-tag">Served all day &middot; $2 &ndash; $16</span>
+              </span>
+              <span class="accordion-caret" aria-hidden="true">&#9662;</span>
+            </summary>
+            <div class="menu-items">
+              <p class="menu-group-label">Sweet</p>
+              <div class="menu-item">
+                <div class="menu-item-head"><h4>Pancakes (2)</h4><span class="menu-item-price">$14.00</span></div>
+                <p>Served with your choice of eggs, plus 2 bacon strips or sausage links.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-head"><h4>French Toast (2)</h4><span class="menu-item-price">$14.00</span></div>
+                <p>Served with your choice of eggs, plus 2 bacon strips or sausage links.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-head"><h4>Waffle</h4><span class="menu-item-price">$15.00</span></div>
+                <p>Served with your choice of eggs, plus 2 bacon strips or sausage links.</p>
+              </div>
+              <div class="menu-item menu-item-compact"><span>Coffee</span><span class="menu-item-price">$2.00</span></div>
+              <div class="menu-item">
+                <div class="menu-item-head"><h4>Juice</h4><span class="menu-item-price">$2.00</span></div>
+                <p>Orange, apple, or cranberry.</p>
+              </div>
 
-          <div class="card">
-            <div class="card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3v7a2 2 0 0 0 2 2v9"/><path d="M6 3v5"/><path d="M9 3v5"/><path d="M18 3c-1.7 0-3 2-3 5s1.3 5 3 5v8"/></svg>
-            </div>
-            <h3>Sandwiches</h3>
-            <p class="price-tag">$13 – $15</p>
-            <p>French dip, BBQ pulled pork, BLT, club, and grilled ham and cheese — classic American lunch, made from scratch, served with the salad of the day.</p>
-          </div>
+              <p class="menu-group-label">Savory</p>
+              <div class="menu-item">
+                <div class="menu-item-head"><h4>Breakfast Bun</h4><span class="menu-item-price">$8.00</span></div>
+                <p>Stuffed with bacon, eggs, potatoes, peppers, and mozzarella cheese.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-head"><h4>Biscuits and Gravy</h4><span class="menu-item-price">$15.00</span></div>
+                <p>Fluffy biscuits topped with rich country sausage gravy, served with eggs.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-head"><h4>Chilaquiles</h4><span class="menu-item-price">$15.00</span></div>
+                <p>Fresh tortilla chips simmered in savory red sauce, topped with scrambled eggs, sour cream, and cheese. Carne asada add-on +$5.00.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-head"><h4>Chicken Fried Steak</h4><span class="menu-item-price">$16.00</span></div>
+                <p>Served with 2 scrambled eggs and hashbrowns.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-head"><h4>Breakfast Burrito</h4><span class="menu-item-price">$8.00</span></div>
+                <p>Made to order with potatoes, eggs, bacon, sausage, chorizo, and mozzarella cheese.</p>
+              </div>
 
-          <div class="card">
-            <div class="card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4c4 0 9 3 9 9 0 4-2.5 7-5.5 7S6 18 6 14"/><path d="M8 4c-1.4 0-2.6 1-2.9 2.4"/><path d="M6.5 14c-1.4 0-2.5-1.4-2.5-3"/></svg>
-            </div>
-            <h3>Gaytán's Specialties</h3>
-            <p class="price-tag">$11 – $18</p>
-            <p>Quesabirria tacos, pupusas with curtido and salsa, chicken fried steak, and a build-your-own salad bar — the dishes reviewers ask for by name.</p>
-          </div>
+              <p class="menu-group-label">Kids Breakfast</p>
+              <div class="menu-item">
+                <div class="menu-item-head"><h4>Mini Pancake Stack</h4><span class="menu-item-price">$6.50</span></div>
+                <p>3 small pancakes, one egg, and choice of one bacon or one sausage link.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-head"><h4>Strawberry French Toast</h4><span class="menu-item-price">$6.00</span></div>
+                <p>Served with one slice of bacon or sausage.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-head"><h4>Heart Waffle</h4><span class="menu-item-price">$6.00</span></div>
+                <p>Served with one slice of bacon or sausage.</p>
+              </div>
 
-          <div class="card">
-            <div class="card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11h16v3a6 6 0 0 1-6 6H10a6 6 0 0 1-6-6v-3Z"/><path d="M2 11h20"/><path d="M9 11c-.5-2 .5-3.5 0-5.5"/><path d="M12 11c-.4-2.6.8-4 .2-6.5"/><path d="M15 11c-.5-2 .5-3.5 0-5.5"/></svg>
+              <p class="menu-group-label">Side Orders</p>
+              <div class="menu-item menu-item-compact"><span>Hashbrowns</span><span class="menu-item-price">$3.00</span></div>
+              <div class="menu-item menu-item-compact"><span>Toast</span><span class="menu-item-price">$2.00</span></div>
+              <div class="menu-item menu-item-compact"><span>Gravy</span><span class="menu-item-price">$2.00</span></div>
+              <div class="menu-item menu-item-compact"><span>2 Bacon</span><span class="menu-item-price">$2.00</span></div>
+              <div class="menu-item menu-item-compact"><span>2 Sausage Links</span><span class="menu-item-price">$2.00</span></div>
+              <div class="menu-item menu-item-compact"><span>2 Eggs</span><span class="menu-item-price">$3.00</span></div>
+              <div class="menu-item menu-item-compact"><span>Seasonal Fruit</span><span class="menu-item-price">$3.00</span></div>
             </div>
-            <h3>Bakery &amp; Grab-and-Go</h3>
-            <p class="price-tag">From $8</p>
-            <p>Cinnamon rolls (a customer favorite — 9 separate reviews call them out by name), breakfast buns, banana bread, and a rotating self-serve case of pies, flan, and cheesecake.</p>
-          </div>
+          </details>
+
+          <details class="menu-accordion">
+            <summary>
+              <div class="card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4c4 0 9 3 9 9 0 4-2.5 7-5.5 7S6 18 6 14"/><path d="M8 4c-1.4 0-2.6 1-2.9 2.4"/><path d="M6.5 14c-1.4 0-2.5-1.4-2.5-3"/></svg>
+              </div>
+              <span class="accordion-heading">
+                <h3>Lunch &amp; Dinner</h3>
+                <span class="price-tag">$6 &ndash; $18</span>
+              </span>
+              <span class="accordion-caret" aria-hidden="true">&#9662;</span>
+            </summary>
+            <div class="menu-items">
+              <p class="menu-group-label">Sandwiches</p>
+              <p class="menu-note">Includes salad of the day.</p>
+              <div class="menu-item">
+                <div class="menu-item-head"><h4>French Dip</h4><span class="menu-item-price">$15.00</span></div>
+                <p>Roast beef with sautéed mushrooms, onions, and Swiss cheese on a hoagie bun, served with au jus.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-head"><h4>BBQ Pork</h4><span class="menu-item-price">$15.00</span></div>
+                <p>Tender pulled pork smothered in BBQ sauce, served on a toasted bun.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-head"><h4>BLT</h4><span class="menu-item-price">$14.00</span></div>
+                <p>Crispy bacon, fresh lettuce, and sliced tomatoes on toasted bread, served with mayo.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-head"><h4>Club</h4><span class="menu-item-price">$14.00</span></div>
+                <p>Turkey, ham, bacon, lettuce, tomato, and mayo layered on toasted bread.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-head"><h4>Grilled Ham and Cheese</h4><span class="menu-item-price">$14.00</span></div>
+                <p>Sliced ham and melted cheese grilled between buttery toasted bread until golden and crisp.</p>
+              </div>
+
+              <p class="menu-group-label">Gaytán's Specialties</p>
+              <div class="menu-item">
+                <div class="menu-item-head"><h4>Quesabirria Tacos (2)</h4><span class="menu-item-price">$15.00</span></div>
+                <p>Crispy corn tortillas filled with slow-cooked shredded beef and melted cheese, served with beef consommé for dipping. Includes rice and beans.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-head"><h4>Pupusas (3)</h4><span class="menu-item-price">$15.00</span></div>
+                <p>Thick handmade corn tortillas stuffed with cheese and pork filling, served with curtido and salsa.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-head"><h4>Chicken Fried Steak</h4><span class="menu-item-price">$18.00</span></div>
+                <p>Breaded beef steak, fried golden brown and topped with country gravy, served with mashed potatoes and corn.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-head"><h4>Cheeseburger</h4><span class="menu-item-price">$15.00</span></div>
+                <p>Juicy grilled beef patty topped with melted cheese on a toasted bun with lettuce, tomato, onion, and pickles. Served with salad of the day.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-head"><h4>Salad Bar</h4><span class="menu-item-price">$11.00 &ndash; $15.00</span></div>
+                <p>Fresh salad bar with crisp greens, fresh veggies, homemade salads, and assorted toppings. Small bowl $11.00, large bowl $15.00.</p>
+              </div>
+
+              <p class="menu-group-label">For the Kids</p>
+              <div class="menu-item">
+                <div class="menu-item-head"><h4>Kids Mac &amp; Cheese</h4><span class="menu-item-price">$6.00</span></div>
+                <p>Annie's Mac and Cheese — creamy macaroni pasta in a rich cheddar cheese sauce, includes a side of seasonal fruit.</p>
+              </div>
+
+              <div class="menu-callout">
+                <p class="menu-group-label" style="margin-top:0;">Gaytán's Daily Specials</p>
+                <ul>
+                  <li>Soup of the week</li>
+                  <li>Daily special plate</li>
+                  <li>Ask your server for today's feature</li>
+                </ul>
+              </div>
+            </div>
+          </details>
+
+          <details class="menu-accordion">
+            <summary>
+              <div class="card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11h16v3a6 6 0 0 1-6 6H10a6 6 0 0 1-6-6v-3Z"/><path d="M2 11h20"/><path d="M9 11c-.5-2 .5-3.5 0-5.5"/><path d="M12 11c-.4-2.6.8-4 .2-6.5"/><path d="M15 11c-.5-2 .5-3.5 0-5.5"/></svg>
+              </div>
+              <span class="accordion-heading">
+                <h3>Bakery &amp; Dessert</h3>
+                <span class="price-tag">Ask in-house for today's selection</span>
+              </span>
+              <span class="accordion-caret" aria-hidden="true">&#9662;</span>
+            </summary>
+            <div class="menu-items">
+              <p>Fresh cinnamon rolls, homemade peach cobbler, and daily dessert selections available in our dessert fridge — a rotating case of flan, cake, and other fresh-baked treats. Cinnamon rolls are the single most-mentioned item in the kitchen's Google reviews.</p>
+            </div>
+          </details>
 
         </div>
       </div>
