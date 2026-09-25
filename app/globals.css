@@ -1,12 +1,13 @@
 /* =========================================================
-   GAYTAN KITCHEN CREATIONS — style.css
-   Built from the base website template, reskinned with the
-   Gaytan Kitchen Creations design scheme (see design-scheme.html
-   reference): espresso / marigold / terracotta / sage on cream,
-   Playfair Display + Lora + a sparing Caveat script accent.
-   ========================================================= */
+   GAYTAN KITCHEN CREATIONS — globals.css
+   Ported from the static site's css/style.css. Same design scheme:
+   espresso / marigold / terracotta / sage on cream, Playfair Display +
+   Lora + a sparing Caveat script accent.
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,500&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Caveat:wght@600;700&display=swap');
+   The Google Fonts @import has been replaced by @fontsource imports in
+   app/layout.js, which self-host the font files at build time (faster,
+   no external request at runtime, no layout shift).
+   ========================================================= */
 
 :root {
   /* -- Brand colors (Gaytan Kitchen Creations design scheme) -- */
@@ -197,7 +198,7 @@ button { font-family: inherit; }
 /* ---------- Hero ----------
    Set a background photo per-page with an inline style on the
    <section class="hero">, e.g.:
-     style="background-image: url('assets/hero-photo.jpg');"
+     style={{ backgroundImage: "url('/assets/hero-photo.jpg')" }}
    The gradient below stays as-is as a fallback (no photo set), and
    ::before lays a cream scrim over whatever is behind it — image or
    fallback gradient — so the heading and body text stay readable
@@ -216,7 +217,7 @@ button { font-family: inherit; }
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(247, 240, 230, 0.7) 0%, rgba(255, 253, 249, 0.9) 100%);
+  background: linear-gradient(180deg, rgba(247, 240, 230, 0.7) 0%, rgba(255, 253, 249, 0.8) 100%);
 }
 .hero > .container {
   position: relative;
@@ -315,6 +316,7 @@ button { font-family: inherit; }
   margin: 20px 0 10px;
 }
 .menu-group-label:first-child { margin-top: 8px; }
+.menu-note { margin: -6px 0 10px; font-size: 0.8rem; font-style: italic; color: var(--color-text-muted); }
 .menu-item { padding: 12px 0; border-bottom: 1px solid var(--color-border); }
 .menu-item:last-child { border-bottom: none; }
 .menu-item-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
